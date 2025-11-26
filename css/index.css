@@ -41,6 +41,10 @@ header {
     margin-right: 5%;
 }
 
+.selection:hover {
+    color: rgba(0, 200, 0, 1);
+}
+
 .navbar a {
     display: block;
     color: #f2f2f2;
