@@ -55,8 +55,14 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     margin-bottom: 1rem;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profielfoto:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+    transform: scale(1.06);
 }
 
 .profiel {
@@ -75,15 +81,23 @@ header {
 }
 
 .Subtitel {
-    font-size: 0.9rem;
+    margin-right: 35%;
+    margin-left: 35%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background-color: rgba(0, 90, 0, 0.4);
+    border-radius: 15px;
+    color: rgb(0, 240, 0);
 }
 
 .Beschrijving {
-    margin-right: 20%;
-    margin-left: 20%;
-    font-size: 0.8rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
 }
 
 /* ---- particles.js container ---- */
