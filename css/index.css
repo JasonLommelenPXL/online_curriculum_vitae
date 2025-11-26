@@ -100,6 +100,114 @@ header {
     color: rgb(180, 180, 180);
 }
 
+.socials {
+    position: absolute;
+    top: 75%;
+    left: 41%;
+}
+.media {
+    color: rgba(0, 160, 0);
+    background-color: transparent;
+    font-size: 4rem;
+    box-shadow: none;
+    border-color: #00AA66;
+    border-style: none;
+    text-decoration: none;
+}
+
+.vaardigheid {
+    background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.vaardigheden {
+    margin-right: 42.5%;
+    margin-left: 42.5%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    background-color: rgba(0, 90, 0, 0.4);
+    border-radius: 25px;
+    color: rgb(0, 240, 0);
+    text-transform: uppercase;
+}
+
+.skills {
+    margin-top: 1%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-text {
+    margin-top: 1%;
+    margin-right: 35%;
+    margin-left: 35%;
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
+}
+
+.skills-grid {
+    list-style: none;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #050a12;
+    border: 1px solid #1b2533;
+    border-radius: 8px;
+    padding: 1.8rem 1.6rem 1.8rem;
+    color: #ffffff;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease,
+            background 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+    border-color: rgba(0, 90, 0, 0.4);
+    background: #071020;
+}
+
+.skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(0, 90, 0, 0.4);
+    color: rgba(0, 180, 0, 1);
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #c8d0dd;
+}
+
+
 /* ---- particles.js container ---- */
 
 canvas {
