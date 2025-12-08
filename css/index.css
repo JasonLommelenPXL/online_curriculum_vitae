@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: #000;
 }
 
 header {
@@ -70,10 +71,13 @@ header {
 }
 
 .profiel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 2rem;
     text-align: center;
     color: #ffffff;
     z-index: 2;
@@ -87,8 +91,7 @@ header {
 .Subtitel {
     margin-right: 35%;
     margin-left: 35%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -97,18 +100,10 @@ header {
     color: rgb(0, 240, 0);
 }
 
-.Beschrijving {
-    margin-right: 10%;
-    margin-left: 10%;
-    font-size: 1.2rem;
-    color: rgb(180, 180, 180);
+.socials {
+    margin-top: 4vh;
 }
 
-.socials {
-    position: absolute;
-    top: 75%;
-    left: 41%;
-}
 .media {
     color: rgba(0, 160, 0);
     background-color: transparent;
@@ -119,10 +114,9 @@ header {
     text-decoration: none;
 }
 
-.vaardigheid {
+section {
     background-color: rgba(0, 0, 0, 1);
-    height: 100vh;
-    padding-top: 10%;
+    padding-top: 4%;
     text-align: center;
 }
 
@@ -211,13 +205,6 @@ header {
     color: #c8d0dd;
 }
 
-.diploma {
-    background-color: rgba(0, 0, 0, 1);
-    height: 100vh;
-    padding-top: 5%;
-    text-align: center;
-}
-
 /* ---- particles.js container ---- */
 
 canvas {
@@ -273,4 +260,190 @@ canvas {
 
 .count-particles {
     border-radius: 0 0 3px 3px;
+}
+
+.skills-class {
+    padding-bottom: 10vh;
+}
+
+.footer {
+    background-color: #050a12;
+    border-top: 1px solid rgba(0, 255, 0, 0.3);
+    color: #d0d0d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar .right {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profielfoto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profiel h1 {
+        font-size: 1.5rem;
+    }
+
+    .Subtitel {
+        margin: 0 auto;
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    .Beschrijving {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: rgb(180, 180, 180);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .socials {
+        position: static;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .media {
+        font-size: 2.5rem;
+    }
+
+    .titel {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 0.6rem;
+    }
+
+    .subtitel {
+        font-size: 1rem;
+    }
+
+    .subsubtitel {
+        font-size: 0.9rem;
+        margin: 0 10%;
+    }
+
+    .skills-grid {
+        margin: 10% 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 1.2rem;
+    }
+
+    footer.footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .profielfoto {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profiel h1 {
+        font-size: 1.8rem;
+    }
+
+    .Subtitel {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .socials {
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .Beschrijving {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: rgb(180, 180, 180);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .media {
+        font-size: 3rem;
+    }
+
+    .skills-grid {
+        margin: 5% 10%;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    footer.footer {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.2rem 2rem;
+    }
+}
+
+/* 🖥️ DESKTOP: vanaf 992px */
+@media (min-width: 992px) {
+    .profiel h1 {
+        font-size: 2.2rem;
+    }
+
+    .Beschrijving {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: rgb(180, 180, 180);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .skills-grid {
+        margin: 5% 20%;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .skill-card {
+        padding: 2rem;
+    }
+
+    footer.footer {
+        font-size: 0.9rem;
+    }
 }
